@@ -1,5 +1,55 @@
 # GitHub Repository Management: Tips and Tricks for Beginners
 
+## Quick Reference Guide
+
+### Setting Up
+
+```bash
+# New repository
+git init
+
+# Connect to GitHub
+git remote add origin https://github.com/username/repo.git
+
+# Get existing repository
+git clone https://github.com/username/repo.git
+```
+
+### Daily Work
+
+```bash
+# Get latest changes
+git pull
+
+# Create new branch
+git checkout -b new-feature
+
+# See what you've changed
+git status
+
+# Add changes
+git add filename.js
+
+# Commit changes
+git commit -m "Add new feature"
+
+# Send to GitHub
+git push origin new-feature
+```
+
+### Fixing Mistakes
+
+```bash
+# Undo uncommitted changes
+git checkout -- filename.js
+
+# Undo staged changes
+git reset HEAD filename.js
+
+# Undo last commit
+git reset --soft HEAD~1
+```
+
 ## Introduction
 
 GitHub helps teams work together on code projects by keeping track of changes and allowing multiple people to collaborate. This guide covers essential tips and explanations to help you manage GitHub repositories effectively, even if you're just getting started.
@@ -427,53 +477,3 @@ git push origin branch-name
 Git and GitHub have many features to help teams work together effectively. Start with these basics, and as you get more comfortable, you can explore more advanced techniques to improve your workflow.
 
 Remember that everyone makes mistakes with Git, even experienced developers. Don't be afraid to experiment—you can always ask for help or look up commands when you need to.
-
-## Quick Reference Guide
-
-### Setting Up
-
-```bash
-# New repository
-git init
-
-# Connect to GitHub
-git remote add origin https://github.com/username/repo.git
-
-# Get existing repository
-git clone https://github.com/username/repo.git
-```
-
-### Daily Work
-
-```bash
-# Get latest changes
-git pull
-
-# Create new branch
-git checkout -b new-feature
-
-# See what you've changed
-git status
-
-# Add changes
-git add filename.js
-
-# Commit changes
-git commit -m "Add new feature"
-
-# Send to GitHub
-git push origin new-feature
-```
-
-### Fixing Mistakes
-
-```bash
-# Undo uncommitted changes
-git checkout -- filename.js
-
-# Undo staged changes
-git reset HEAD filename.js
-
-# Undo last commit
-git reset --soft HEAD~1
-```
